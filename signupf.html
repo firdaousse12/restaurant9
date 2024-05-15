@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-image: url('signin up back.webp');
+            background-size: cover;
+            background-position: center;
+    
+}
+
+
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Signup</h2>
+
+<form id="signupForm">
+    <label for="username">Username:</label>
+    <input type="text" id="Firstrname" name="First name" placeholder="enter your first name " required>
+    <input type="text" id="Lastname" name="Last name" placeholder="enter your last name" required>
+    <label for="Mail">Mail:</label>
+    <input type="text" id="Mail" name="E-mail" placeholder="enter your e-mail " required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="enter your password " required>
+    <input type="submit" value="Signup">
+</form>
+
+<script>
+    document.getElementById("signupForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+       
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        
+       
+        console.log("Username:", username);
+        console.log("Password:", password);
+
+        
+        alert("Signup successful!");
+    });
+</script>
+
+</body>
+</html>
